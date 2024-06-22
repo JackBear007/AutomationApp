@@ -51,7 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'sample00123'
-          slot-name: 'Production'
+          app-name: 'automationhubweb'
+         # slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FE002AB1F61247B28D428C8842EE8318 }}
           package: .
